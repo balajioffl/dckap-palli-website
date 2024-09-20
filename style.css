@@ -2,6 +2,20 @@
     font-family: "Montserrat", sans-serif;
 }
 
+:root {
+    --body-background-color: rgb(255, 255, 255);
+    --heading-color: #49a843;
+    --palli-name-color:rgba(5,184,59,255);
+    --nave-bar-text-color: rgb(175, 53, 35);
+    --dckap-palli-works-background-color: rgb(44, 48, 63);
+    --text-color: rgb(102, 97, 92);
+    --header-text-color: rgb(32, 39, 46);
+    --thamil-text-background-color: rgb(32, 39, 46);
+    --footer-background-color: rgb(31, 39, 46);
+    --the-moment-text-color:white;
+    --practial-container-background-color:rgba(235,248,236,255);
+  }
+
 body{
     margin: 0px;
     padding: 0px;
@@ -10,8 +24,8 @@ body{
 header {
     position: sticky;
     top: 0;
-    overflow: hidden;
     background-color: white;
+    z-index: 1;
 }
 
 .nav-bar{
@@ -47,7 +61,8 @@ header {
 }
 
 .dckap-logo img{
-    width:310px;
+    width:50%;
+    margin-left: 20%;
 }
 
 .nav-bar a{
@@ -106,7 +121,7 @@ header {
 
 .batch-1 img{
     width: 100%;
-    height: 100%;
+    height: 370px;
 }
 
 .batch-1::after{
@@ -116,7 +131,7 @@ header {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .main3{
@@ -162,13 +177,17 @@ header {
     width: 22%;
 }
 
+.palli-works{
+    width: 100%;
+}
+
 .palli-works-image{
     position: relative;    
 }
 
 .palli-works-image img{
     width: 100%;
-    height: 100%;
+    height: 380px;
     background-repeat: no-repeat;
     background-size: 100px 10px;
    
@@ -183,5 +202,336 @@ header {
     height: 100%;
     background-color: #242838;
     opacity: 90%;
+}
+
+.Criteria{
+    width: 100%;
+    display: flex;
+ }
+ 
+ .Eligibility-Criteria{
+     padding: 30px;
+ }
+ 
+ .Eligibility-Criteria h3{
+  margin-left: 40px;
+  font-size: 30px;
+ }
+ 
+ 
+ .Criteria-list i{
+ color: rgb(80, 168, 67);
+ font-weight: 500px;
+ font-size: 20px;
+ }
+ 
+ .Criteria-list li{
+    width: 100%;
+    margin-left: 50px;
+     list-style: none;
+     font-size: 20px;
+     font-weight: 500;
+     line-height: 30px;
+ }
+ .Criteria-list{
+     width: 70%;
+     margin-top: 30px;
+ }
+ 
+ .Criteria-list p{
+     display: inline;
+     padding-left: 10px;
+     margin-top: 40px;
+     line-height: 1.8;
+ }
+
+ .Criteria-image{
+    margin-left: 80px;
+ }
+
+ .Selection-Process{
+     padding: 10px;
+     margin:10px;
+     display: flex;
+     flex-direction: row;
+     margin: auto; 
+ }
+ 
+ .Selection-Process h3{
+   margin:5px;
+   width: 60%;
+   text-align: center;
+   padding-left: 40px;
+ }
+ 
+ .Process{
+     margin: 20px;
+
+ }
+ 
+ .Selection{
+     margin:40px 0px 20px 0px; 
+    background-color: #f7fcf8;
+    padding: 10px 10px 50px 10px;
+ }
+ 
+ .selection h3{
+     width: 50%;
+ }
+ 
+ .Selection h4{
+  font-size: 30px;
+  text-align: center;
+ }
+ 
+ .Key-Highlights{
+    padding: 40px;
+ }
+ .Highlights i{
+     color: black;
+     font-weight: 500px;
+     font-size: 20px;
+     line-height: 2;
+ }
+ 
+ .Highlights li{
+     list-style: none;
+     font-size: 20px;
+     font-weight: 400;
+     line-height: 2;
+ }
+ 
+ .Highlights p{
+     display: inline;
+     padding-left: 10px;
+     margin-top: 40px;
+ }
+ 
+ .Highlights{
+     width: 50%;
+ }
+ 
+ .Key-points{
+     display: flex;
+ }
+ 
+ .Key-Highlights h3{
+     width: 40%;
+     margin-left: 3%;
+     font-size: 30px;
+ }
+
+.video{
+    margin-left:3%;
+    border-radius: 10px ;
+}
+.ACCOMPLISHMENT-container{  
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding:5%;
+    background-color:#49a843
+}
+
+.ACCOMPLISHMENT-container-img{
+    width: 50%;
+}
+
+.ACCOMPLISHMENT-container-img img{
+    width: 100%;
+    border-radius: 4px;
+    padding-top: 45px;
+}
+
+.ACCOMPLISHMENT-container-contant{
+    width: 50%;
+    margin-top: 0;
+    color: var(--the-moment-text-color);
+}
+
+.ACCOMPLISHMENT-container-contant h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.ACCOMPLISHMENT-container-contant p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.question-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    gap: 5%;
+}
+
+.question-container-contant-1{
+    width: 17%;
+    display: flex;
+    font-size: 17px;
+    padding: 20px;
+}
+
+.question-container-contant-2{
+    padding: 30px;
+    width: 57%;  
+    margin: 0px;
+}
+
+.question-container-contant-2 p,h3{
+    font-size:16px;
+    line-height: 1.8;
+}
+
+.question-container-contant-2 p{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #8896A6;
+    padding-bottom: 10px;
+}
+
+.practical-container{
+    display: flex;
+    justify-content: center;
+    background-color: #edf6ec;
+    padding: 5%;
+}
+
+.practical-container-contant{
+    width: 90%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #20272e;
+    text-align: center;
+}
+
+.practical-container-contant h2{
+    margin: 0px;
+}
+
+.practical-container-contant p{
+    font-size: 17px; 
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 90px;
+    padding: 2%;
+}
+
+.location-contant{
+    width: 35%;
+}
+
+.call-back-form{
+    width: 40%;
+    margin-left: 80px;
+    padding-left:70px;
+}
+
+.location-contant h4{
+    font-size: 22px;
+    color:var(--heading-color);
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 8px;
+    margin-left: 20%;
+}
+
+strong a{
+    text-decoration: none;
+    color: black;
+    font-size: smaller;
+}
+
+.gmail{
+    margin-left: 20%;
+}
+
+.location-map{
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 4%;
+    width: 100%;
+    margin-left: 80px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.location-map iframe{
+    width: 100%;
+}
+
+.call-back-form h4{
+    font-size: 22px;
+    color: var(--heading-color);
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.dckap-logo-2{
+    width: 40%;
+}
+
+.dckap-logo-2 img{
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+form input{
+    font-size: 16px;;
+    padding: 10px 10px;
+    height: 20px;
+    border: none;
+    background-color: #f5f8fa;
+    width: 90%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button{
+    background: var(--heading-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 14px;
+    overflow: hidden;
+    border: none;
+}
+
+footer{
+    background-color: var(--footer-background-color);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer-container{
+    width: 80%;
+    text-align: center;
+}
+
+footer p{
+    color: var(--body-background-color);
+    font-size: small;
+    padding: 0px 0px 10px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    font-size: smaller;
+}
+
+.links a{
+    color: var(--body-background-color);
 }
 
