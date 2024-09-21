@@ -19,6 +19,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    border: 2px solid blue;
 }
 
 header {
@@ -26,6 +27,10 @@ header {
     top: 0;
     background-color: white;
     z-index: 1;
+}
+
+.icon  {
+   opacity: 0;
 }
 
 .nav-bar{
@@ -61,8 +66,7 @@ header {
 }
 
 .dckap-logo img{
-    width:50%;
-    margin-left: 20%;
+    width:310px;
 }
 
 .nav-bar a{
@@ -324,6 +328,7 @@ header {
 .video{
     margin-left:3%;
     border-radius: 10px ;
+    box-shadow: 3px  3px 3px 3px rgba(0, 0, 0, 0.2)
 }
 .ACCOMPLISHMENT-container{  
     display: flex;
@@ -335,6 +340,7 @@ header {
 
 .ACCOMPLISHMENT-container-img{
     width: 50%;
+   
 }
 
 .ACCOMPLISHMENT-container-img img{
@@ -422,6 +428,10 @@ header {
     justify-content: space-evenly;
     margin-right: 90px;
     padding: 2%;
+    background-image: url(./assets/footer-bg.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .location-contant{
@@ -535,3 +545,133 @@ footer p{
     color: var(--body-background-color);
 }
 
+@media (max-width:425px){
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .main-container{
+        width: 100%;
+    }
+.main2{
+    padding: 0px;
+}
+
+   .icon{
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+   } 
+
+   .nav-content{
+    display: none;
+   }
+
+   .header-content{
+    width: 75%;
+    margin: auto;
+   }
+
+.batch-1 img{
+    height: 200px;
+}
+.program-image1,.program-image2,.program-image3,.program-image4{
+    background-color: white;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 10px;
+    font-weight: 500 ;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+   .Criteria{
+    display:flex;
+    flex-direction: column;
+   }
+
+   .process{
+
+   }
+   .Written{
+    padding: 30px;
+   }
+   .group{
+    width: 70%;
+   }
+   .Highlights {
+    line-height: 1.7;
+    width: 100%;
+   }
+   
+
+   .Selection-Process{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .Key-points{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .video{
+    width: 100%;
+    height: 200px;
+    box-shadow: 5px  5px 5px 5px rgba(34, 34, 34, 0.2)
+   }
+.ACCOMPLISHMENT-container{
+    display: flex;
+    flex-direction: column;
+}
+.practical-container-contant{
+    font-size: 30px;
+}
+
+
+  
+
+.Written {
+ padding-left: 45px;
+}
+
+
+.Key-Highlights h3{
+    width: 100%;
+}
+.ACCOMPLISHMENT-container-img{
+    width: 100%;
+}
+
+.ACCOMPLISHMENT-container-contant{
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+.ACCOMPLISHMENT-container-contant h3{
+    font-size: 18px;
+}
+
+.question-container{
+    display: flex;
+    flex-direction: column;
+}
+.question-container-contant-1{
+    width: 70%;
+}
+
+.question-container-contant-1 h2{
+    width: 80%;
+}
+.question-container-contant-2 {
+    width: 80%;
+}
+
+
+}
