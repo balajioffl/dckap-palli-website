@@ -19,7 +19,9 @@
 body{
     margin: 0px;
     padding: 0px;
-    border: 2px solid blue;
+}
+
+header {
     position: sticky;
     top: 0;
     background-color: white;
@@ -177,6 +179,75 @@ body{
     text-transform: capitalize;
     width: 22%;
     position: relative;
+}
+.program-image1,.program-image2,.program-image3,.program-image4{
+    background-color: white;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 10px;
+    font-weight: 500 ;
+    text-align: center;
+    text-transform: capitalize;
+    width: 22%;
+    position: relative;
+}
+
+.program-image1,.program-image2,.program-image3,.program-image4{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.imeage{
+    width: 450px;
+    height: auto;
+
+}
+ .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+    opacity: 0;
+} 
+.overlay h1{
+    text-align: center;
+    color: #ffff;
+    font-size: 29px;
+    text-align: center;
+
+}
+.overlay p{
+    text-align: center;
+    color: #ffff;
+    font-size: 19px;
+    text-align: center;
+}
+.program-image1:hover .imeage{
+    transform: scale(1.1);
+}
+.program-image1:hover .overlay{
+    opacity: 1;
+}
+.program-image2:hover .imeage{
+    transform: scale(1.1);
+}
+.program-image2:hover .overlay{
+    opacity: 1;
+}
+.program-image3:hover .imeage{
+    transform: scale(1.1);
+}
+.program-image3:hover .overlay{
+    opacity: 1;
+}
+.program-image4:hover .imeage{
+    transform: scale(1.1);
+}
+.program-image4:hover .overlay{
+    opacity: 1;
 }
 
 .program-image1,.program-image2,.program-image3,.program-image4{
@@ -620,7 +691,9 @@ footer p{
     height: 100%;
     width: 100%;
     z-index: 1;
-   } 
+    text-align: center;
+    margin-top: 40px;  
+ } 
 
    .nav-content{
     display: none;
@@ -650,9 +723,7 @@ footer p{
     flex-direction: column;
    }
 
-   .process{
 
-   }
    .Written{
     padding: 30px;
    }
